@@ -22,7 +22,14 @@
             <div class="row">
                 @foreach ($movies as $movie)
                     <div class="col-4">
-
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">{{$movie->title}}</h5>
+                              <h6 class="card-subtitle">{{$movie->original_title}}</h6>
+                              <p>{{$movie->date}}</p>
+                              <p>{{$movie->vote}}</p>
+                            </div>
+                          </div>
                     </div>
                 @endforeach
             </div>
